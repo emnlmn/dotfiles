@@ -1,0 +1,9 @@
+# Cougar
+alias c="cd ~/Code/cougar"
+alias dc-sh="dc run --rm php-fpm sh"
+alias csfix="dc run --rm --no-deps php-fpm php -n ./vendor/bin/php-cs-fixer fix --path-mode=intersection ./"
+
+# Git
+featureStart() {
+    git checkout -b "feature/$1"
+}
