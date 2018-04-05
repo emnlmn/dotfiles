@@ -14,4 +14,4 @@ alias dc="docker-compose"
 alias z.c="nano ~/.zshrc"
 alias z.r="source ~/.zshrc"
 
-source ./.facile_aliases
+for f in ./custom/.*aliases; do source $f; done
