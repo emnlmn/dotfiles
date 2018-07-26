@@ -1,3 +1,5 @@
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
 # Projects
 alias dev="cd ~/Code"
 
@@ -14,4 +16,4 @@ alias dc="docker-compose"
 alias z.c="nano ~/.zshrc"
 alias z.r="source ~/.zshrc"
 
-for f in ./custom/.*aliases; do source $f; done
+for f in $SCRIPTPATH/custom/.*aliases; do source $f; done
